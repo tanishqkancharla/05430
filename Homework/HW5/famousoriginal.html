@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="base.css" />
 		<link rel="stylesheet" type="text/css" href="productpage.css" />
 	</head>
 	<body>
@@ -35,47 +36,60 @@
 							adipiscing elit. Donec malesuada, libero in pellentesque tempor,
 							orci est accumsan massa, nec ullamcorper metus purus at nisi.
 						</div>
-					</div>
-				</div>
-
-				<div id="selectors">
-					<div id="amount">
-						<a>Amount:</a>
-						<ul id="amount-selector-list">
-							<li class="amount-selector-item">1</li>
-							<li class="amount-selector-item">3</li>
-							<li class="amount-selector-item">6</li>
-							<li class="amount-selector-item">12</li>
-						</ul>
-					</div>
-					<div id="glaze">
-						<a>Glaze:</a>
-						<ul id="glaze-selector-list">
-							<li class="glaze-selector-item">None</li>
-							<li class="glaze-selector-item">Sugar-milk</li>
-							<li class="glaze-selector-item">Vanilla-milk</li>
-							<li class="glaze-selector-item">Double-chocolate</li>
-						</ul>
-					</div>
-					<div id="price">
-						<div>
-							<a id="price-display"> Price: #x </a>
+						<div id="selectors">
+							<div id="amount">
+								<a>Amount:</a>
+								<ul id="amount-selector-list">
+									<li class="amount-selector-item">
+										<input type="radio" />
+										1
+									</li>
+									<li class="amount-selector-item"><input type="radio" />3</li>
+									<li class="amount-selector-item"><input type="radio" />6</li>
+									<li class="amount-selector-item"><input type="radio" />12</li>
+								</ul>
+							</div>
+							<div id="glaze">
+								<a>Glaze:</a>
+								<ul id="glaze-selector-list">
+									<li class="glaze-selector-item">None</li>
+									<li class="glaze-selector-item">Sugar-milk</li>
+									<li class="glaze-selector-item">Vanilla-milk</li>
+									<li class="glaze-selector-item">Double-chocolate</li>
+								</ul>
+							</div>
+							<div id="price">
+								<div>
+									<a id="price-display"> Price: #x </a>
+								</div>
+								<button id="add-to-cart">
+									ADD TO CART
+								</button>
+							</div>
 						</div>
-						<button id="add-to-cart">
-							ADD TO CART
-						</button>
 					</div>
 				</div>
 			</div>
+
 			<div id="menu-container">
 				<div id="menu">
 					<a id="menu-title"> Menu </a>
 					<ul id="menu-list">
-						<li active="true">Famous Original</li>
-						<li>Blackberry</li>
-						<li>Walnut</li>
-						<li>Pumpkin Spice</li>
-						<li>Caramel Pecan</li>
+						<li class="menu-list-item">
+							<a active="true" href="famousoriginal.html"> Famous Original </a>
+						</li>
+						<li class="menu-list-item">
+							<a href="famousoriginal.html"> Blackberry </a>
+						</li>
+						<li class="menu-list-item">
+							<a href="famousoriginal.html"> Walnut </a>
+						</li>
+						<li class="menu-list-item">
+							<a href="famousoriginal.html"> Pumpkin Spice </a>
+						</li>
+						<li class="menu-list-item">
+							<a href="famousoriginal.html"> Caramel Pecan </a>
+						</li>
 					</ul>
 				</div>
 			</div>

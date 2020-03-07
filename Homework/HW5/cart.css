@@ -1,0 +1,27 @@
+#body {
+    position: relative;
+    height: 80%;
+}
+
+#cart-table {
+    display: inline-block;
+    width: 59%;
+    position: absolute;
+    top: 100px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

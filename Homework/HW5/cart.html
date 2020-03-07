@@ -2,10 +2,13 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="base.css" />
-		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" href="cart.css" />
 	</head>
 	<body>
 		<div id="menu-bar-container">
+			<div id="home-page-link-container">
+				<a id="home-page-link" href="index.html"> BUN BUN BAKE SHOP </a>
+			</div>
 			<ul id="menu-bar">
 				<li class="menu-bar-item">
 					History
@@ -13,32 +16,22 @@
 				<li class="menu-bar-item">
 					Contact
 				</li>
-				<li class="menu-bar-item">
-					<a href="cart.html">Cart</a>
+				<li active="true" class="menu-bar-item">
+					Cart
 				</li>
 			</ul>
 		</div>
 		<div id="body">
-			<div id="main-graphic">
-				<div id="roll-graphic">
-					<img />
-				</div>
-				<div id="title">
-					BUN BUN BAKE SHOP
-				</div>
-				<div id="subtitle">
-					since 1973
-				</div>
-				<div id="description">
-					<span class="firstcharacter">W</span>e are a bakery. Lorem ipsum dolor
-					sit amet, consectetur adipiscing elit. Donec malesuada, libero in
-					pellentesque tempor, orci est accumsan massa, nec ullamcorper metus
-					purus at nisi. Pellentesque eu leo sed massa feugiat luctus. Nam
-					posuere mi odio, sed pellentesque ex gravida ut. Sed in neque id risus
-					posuere rutrum. Proin purus justo, scelerisque nec justo non, vehicula
-					laoreet eros. Ut porta at felis non malesuada.
-				</div>
+			<div id="cart-table">
+				<table>
+					<tr>
+						<th>Type</th>
+						<th>Amount</th>
+						<th>Price</th>
+					</tr>
+				</table>
 			</div>
+
 			<div id="menu-container">
 				<div id="menu">
 					<a id="menu-title"> Menu </a>

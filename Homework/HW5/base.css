@@ -1,0 +1,86 @@
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home-page-link-container {
+    display: inline-block;
+    width: 35%;
+    /* padding-top: 20px; */
+    /* padding-left: 30px; */
+    text-align: center;
+    vertical-align: middle;
+}
+
+#home-page-link {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    overflow: hidden;
+    /* float: left; */
+    /* padding: 10px 0px 0px 20px; */
+}
+
+#home-page-link:hover {
+    font-weight: bold;
+    /* float: left; */
+    /* padding: 10px 0px 0px 20px; */
+}
+
+#menu-bar-container {
+    height: 25%;
+    /* overflow: auto; */
+}
+
+#menu-bar {
+    display: inline-block;
+    width: 60%;
+    padding: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.menu-bar-item {
+    border: 2px solid;
+    /* margin: 10px; */
+    padding: 5px 10px;
+    display: inline;
+    font-size: 25px;
+    text-align: center;
+}
+
+#menu-container {
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    right: 0px;
+}
+
+#menu {
+    padding: 100px 100px 100px 50px;
+    font-size: 30px;
+}
+
+#menu-title {
+    padding-left: 40px;
+}
+
+.menu-list-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list-item [active="true"] {
+    text-decoration: underline;
+}
+
+.menu-list-item a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* font-size: 45px; */
+}
+
+.menu-list-item {
+    text-decoration: none;
+}
