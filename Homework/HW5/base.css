@@ -28,14 +28,17 @@ body {
 }
 
 #menu-bar-container {
-    height: 25%;
+    height: 35%;
     /* overflow: auto; */
+    position: relative;
 }
 
 #menu-bar {
     display: inline-block;
+    position: absolute;
+    right: 10px;
     width: 60%;
-    padding: 0;
+    /* padding: 0px 100px 0px 0px; */
     text-align: right;
     vertical-align: middle;
 }

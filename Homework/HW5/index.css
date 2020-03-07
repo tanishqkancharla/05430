@@ -3,6 +3,10 @@
     overflow: auto;
 }
 
+#menu-bar {
+    width: 100%;
+}
+
 #main-graphic {
     width: 60%;
     height: 100%;

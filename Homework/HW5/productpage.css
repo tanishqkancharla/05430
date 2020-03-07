@@ -13,12 +13,14 @@
 #roll-graphic {
     display: inline-block;
     width: 20%;
+    height: 100%;
     overflow: hidden;
-    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 #roll-graphic img {
     width: 100%;
+    vertical-align: middle;
 }
 
 #product-info {
@@ -50,12 +52,12 @@
 }
 
 .amount-selector-item {
-    display: inline;
+    /* display: inline; */
     margin: 20px;
 }
 
 .glaze-selector-item {
-    display: inline;
+    /* display: inline; */
     margin: 20px;
 }
 

@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="base.css" />
 		<link rel="stylesheet" type="text/css" href="productpage.css" />
+		<script type="text/javascript" src="productpage.js"></script>
 	</head>
 	<body>
 		<div id="menu-bar-container">
@@ -17,55 +18,66 @@
 					Contact
 				</li>
 				<li class="menu-bar-item">
-					Cart
+					<a href="cart.html">Cart</a>
 				</li>
 			</ul>
 		</div>
 		<div id="body">
 			<div id="main-graphic">
-				<div>
-					<div id="roll-graphic">
-						<img src="images/roll.png" />
+				<div id="roll-graphic">
+					<img src="images/roll.png" />
+				</div>
+				<div id="product-info">
+					<div id="title">
+						FAMOUS ORIGINAL
 					</div>
-					<div id="product-info">
-						<div id="title">
-							FAMOUS ORIGINAL
+					<div id="description">
+						We are a bakery. Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Donec malesuada, libero in pellentesque tempor, orci est
+						accumsan massa, nec ullamcorper metus purus at nisi.
+					</div>
+					<div id="selectors" onchange="updatePrice()">
+						<div id="amount">
+							<a>Amount:</a>
+							<ul id="amount-selector-list">
+								<li class="amount-selector-item">
+									<input name="amount" value="1" type="radio" />1
+								</li>
+								<li class="amount-selector-item">
+									<input name="amount" value="3" type="radio" />3
+								</li>
+								<li class="amount-selector-item">
+									<input name="amount" value="6" type="radio" />6
+								</li>
+								<li class="amount-selector-item">
+									<input name="amount" value="12" type="radio" />12
+								</li>
+							</ul>
 						</div>
-						<div id="description">
-							We are a bakery. Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Donec malesuada, libero in pellentesque tempor,
-							orci est accumsan massa, nec ullamcorper metus purus at nisi.
+						<div id="glaze">
+							<a>Glaze:</a>
+							<ul id="glaze-selector-list">
+								<li class="glaze-selector-item">
+									<input name="glaze" value="1.5" type="radio" />None
+								</li>
+								<li class="glaze-selector-item">
+									<input name="glaze" value="2" type="radio" />Sugar-milk
+								</li>
+								<li class="glaze-selector-item">
+									<input name="glaze" value="3" type="radio" />Vanilla-milk
+								</li>
+								<li class="glaze-selector-item">
+									<input name="glaze" value="3" type="radio" />Double-chocolate
+								</li>
+							</ul>
 						</div>
-						<div id="selectors">
-							<div id="amount">
-								<a>Amount:</a>
-								<ul id="amount-selector-list">
-									<li class="amount-selector-item">
-										<input type="radio" />
-										1
-									</li>
-									<li class="amount-selector-item"><input type="radio" />3</li>
-									<li class="amount-selector-item"><input type="radio" />6</li>
-									<li class="amount-selector-item"><input type="radio" />12</li>
-								</ul>
+						<div id="price">
+							<div>
+								<a id="price-display"> Price: $0 </a>
 							</div>
-							<div id="glaze">
-								<a>Glaze:</a>
-								<ul id="glaze-selector-list">
-									<li class="glaze-selector-item">None</li>
-									<li class="glaze-selector-item">Sugar-milk</li>
-									<li class="glaze-selector-item">Vanilla-milk</li>
-									<li class="glaze-selector-item">Double-chocolate</li>
-								</ul>
-							</div>
-							<div id="price">
-								<div>
-									<a id="price-display"> Price: #x </a>
-								</div>
-								<button id="add-to-cart">
-									ADD TO CART
-								</button>
-							</div>
+							<button id="add-to-cart">
+								ADD TO CART
+							</button>
 						</div>
 					</div>
 				</div>
