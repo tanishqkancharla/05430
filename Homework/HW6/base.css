@@ -31,14 +31,18 @@ body {
     overflow: hidden;
     font-family: var(--title-font);
     padding-left: 65px;
-    /* float: left; */
-    /* padding: 10px 0px 0px 20px; */
+    
+    animation-name: underline-rev;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 #home-page-link:hover {
     font-weight: bold;
-    /* float: left; */
-    /* padding: 10px 0px 0px 20px; */
+    
+    animation-name: underline;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 #nav-bar-container {
@@ -63,6 +67,25 @@ body {
     text-align: center;
 }
 
+.nav-bar-item a {
+    text-decoration: none;
+
+    animation-name: underline-rev;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.nav-bar-item a :hover {
+    font-weight: bold;
+    animation-name: underline;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#nav-bar [active="true"] a {
+    text-decoration: underline;
+}
+
 #menu-container {
     display: inline-block;
     width: 40%;
@@ -83,6 +106,10 @@ body {
 .menu-list-item a {
     text-decoration: none;
     color: black;
+
+    animation-name: underline-rev;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .menu-list-item [active="true"] {
@@ -92,8 +119,25 @@ body {
 .menu-list-item a:hover {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    /* font-weight: bold; */
+    animation-name: underline;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
     /* font-size: 45px; */
+}
+
+@keyframes underline {
+    from {
+        color: black;}
+    to {
+        color: rgb(100, 219, 104);}
+}
+
+@keyframes underline-rev {
+    from {
+        color: rgb(100, 219, 104);}
+    to {
+        color: black}
 }
 
 .menu-list-item {
