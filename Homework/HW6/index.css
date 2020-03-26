@@ -1,0 +1,56 @@
+@import "base.css";
+
+#body {
+    font-family: var(--subtitle-font);
+    height: 90%;
+    /* overflow: auto; */
+}
+
+#header {
+    text-align: right;
+}
+
+#nav-bar-container {
+    /* overflow: auto; */
+    /* width: 100%; */
+    width: auto;
+    text-align: right;
+    padding-right: 60px;
+}
+
+#main-graphic-container{
+    width: 60%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    /* padding: 150px 50px 20px 50px; */
+}
+
+#main-graphic{
+    padding: 100px 50px 20px 50px;
+}
+
+#title {
+    font-size: 70px;
+    font-family: var(--title-font);
+}
+
+#subtitle {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#description {
+    font-size: 20px;
+    padding: 15px 40px 0px 40px;
+    text-align: left;
+}
+
+.firstcharacter {
+    float: left;
+    font-size: 45px;
+    line-height: 37px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
