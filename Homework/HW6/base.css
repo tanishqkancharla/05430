@@ -38,8 +38,6 @@ body {
 }
 
 #home-page-link:hover {
-    font-weight: bold;
-    
     animation-name: underline;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;

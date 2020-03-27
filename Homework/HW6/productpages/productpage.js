@@ -46,8 +46,10 @@ function addToCart() {
 	console.log(localStorage.getItem('cart'));
 	curr_cart = JSON.parse(localStorage.getItem('cart'));
 	if(!getAmount() || !getGlaze()) return;
-	item = {'amount': Number(getAmount().value), 'glaze': getGlaze().getAttribute("kind"), 'price': updatePrice()};
+	item = {'amount': Number(getAmount().value), 'glaze': getGlaze().getAttribute("kind"), 'price': updatePrice(),
+	'type': document.getElementById("product-page-type").value};
 	curr_cart.push(item);
 	console.log(curr_cart);
 	localStorage.setItem('cart', JSON.stringify(curr_cart));
+	alert('Added to cart!');
 }
